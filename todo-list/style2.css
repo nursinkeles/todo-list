@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', serif;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+  }
+  body {
+    background: #835858;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+  }
+  .container{    
+     width: 350px;
+      height: auto;
+      color: #ebd4d4;
+      border:1px solid #463333;
+      background: #fff;
+      border-radius: 10px;
+      transition: 500ms all ease-in-out;
+
+  }
+  .container:hover{
+      cursor:pointer;
+      box-shadow: 5px 5px 15px #463333;
+    
+  }
+ 
+  .todo h1{
+      text-align: center;
+      padding:15px;
+      color:#835858;
+      background:#ebd4d4 ;
+      border-bottom: 1px solid #463333;
+      border-radius: 10px  10px 0 0;
+     letter-spacing: 1.5px;
+     text-shadow: 2px 2px 5px #463333;
+  }
+  .container form {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    
+    padding: 5px 10px 10px 5px;
+    border-bottom: 1px dashed #ebd4d4;
+  }
+  .container .form-control {
+     margin-bottom: 7px;
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #835858;
+    outline: none;
+    border:none;
+  }
+  .container .add-button{
+      border:none;
+      background:#835858;
+      color:#fff0f0;
+      border-radius: 5px;
+      padding:5px 7px;
+      position: relative;
+      top:-3px;
+      font-size: 15px;
+      font-weight: 500; 
+      transition: 500ms all ease-in-out;
+  }
+  .add-button:hover,.allClearButton:hover {
+      cursor:pointer;
+      background:#ebd4d4;
+      color:#835858;
+      border:1px solid #835858;
+      box-shadow:2px 2px 5px #463333;
+  
+   
+
+  }
+  .card-body h3{
+      font-size: 25px;
+      color:#835858;
+      padding: 0 15px;
+      font-weight: 600;
+      text-align: center;
+        
+  }
+ .list-group{
+     margin:20px;
+ }
+ .list-group .list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+     padding: 5px 15px;
+     color:#835858;
+     opacity: 0.8;
+    transition: 500ms all ease-in-out;
+    
+     
+ }
+ .list-item:hover{
+     opacity:1.5;
+
+ }
+ .delete-item{
+     color:#835858;
+     font-size: 20px;
+transition: 500ms all ease-in-out;
+
+ }
+ .delete-item:hover{
+    color:#ebd4d4;
+    animation: rotateOut 1s ;
+   
+
+}
+
+
+.deleteButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.allClearButton{
+    border:none;
+    background:#835858;
+    color:#fff0f0;
+    border-radius: 5px;
+    padding:5px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 500ms all ease-in-out;
+  
+
+}
+.card-body{
+    height:230px;
+    border-bottom: 1px dashed #ebd4d4;
+    overflow-y: auto;
+
+}
+::placeholder{
+    color: #835858;
+}
+
+
+.rotateOut {
+    -webkit-animation-name: rotateOut;
+    animation-name: rotateOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes rotateOut {
+    0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+    }
+    }
+    @keyframes rotateOut {
+    0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+    opacity: 0;
+    }
+    } 
+
+    ::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+       }
+       ::-webkit-scrollbar-thumb {
+        background: linear-gradient(13deg, #f9d4ff 14%,#c7ceff 64%);
+        border-radius: 10px;
+       }
+       ::-webkit-scrollbar-thumb:hover{
+        background: linear-gradient(13deg, #c7ceff 14%,#f9d4ff 64%);
+       }
+       ::-webkit-scrollbar-track{
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: inset 7px 10px 12px #f0f0f0;
+       }
+  
+
+  
